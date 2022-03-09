@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         DB::table('task')->insert([
             'id' => 'test1',
             'name' => 'test1@test.com',
-            'day' => '2022/12/24'
+            'password' => bcrypt('test1')
         ]);
 
     }
